@@ -1,0 +1,1288 @@
+
+
+:root {
+
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  color: #e8ecf4;
+
+  background: #0b1020;
+
+  font-synthesis: none;
+
+  text-rendering: optimizeLegibility;
+
+  -webkit-font-smoothing: antialiased;
+
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+
+
+* {
+
+  box-sizing: border-box;
+
+}
+
+
+
+body {
+
+  margin: 0;
+
+  min-width: 320px;
+
+  min-height: 100vh;
+
+}
+
+
+
+button,
+
+input,
+
+textarea,
+
+select {
+
+  font: inherit;
+
+}
+
+
+
+.login-page {
+
+  min-height: 100vh;
+
+  display: grid;
+
+  place-items: center;
+
+  padding: 24px;
+
+  background:
+
+    radial-gradient(ellipse at 50% 0%, #1b2b50 0%, transparent 55%),
+
+    #0b1020;
+
+}
+
+
+
+.login-card {
+
+  width: 100%;
+
+  max-width: 440px;
+
+  padding: 40px;
+
+  border: 1px solid #28344d;
+
+  border-radius: 20px;
+
+  background: rgba(17, 25, 44, 0.94);
+
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+
+}
+
+
+
+.brand-mark {
+
+  display: grid;
+
+  place-items: center;
+
+  width: 48px;
+
+  height: 48px;
+
+  margin-bottom: 28px;
+
+  border-radius: 14px;
+
+  background: #6d5dfc;
+
+  color: white;
+
+  font-size: 25px;
+
+  font-weight: 800;
+
+}
+
+
+
+.eyebrow {
+
+  margin: 0 0 10px;
+
+  color: #a69cff;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+}
+
+
+
+h1 {
+
+  margin: 0;
+
+  font-size: clamp(25px, 5vw, 31px);
+
+  letter-spacing: -0.8px;
+
+}
+
+
+
+.subtitle {
+
+  margin: 12px 0 30px;
+
+  color: #9ba8bd;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+
+}
+
+
+
+.login-card form {
+
+  display: flex;
+
+  flex-direction: column;
+
+}
+
+
+
+label {
+
+  margin: 0 0 8px;
+
+  color: #dbe2ef;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+}
+
+
+
+.login-card input {
+
+  width: 100%;
+
+  margin-bottom: 20px;
+
+  padding: 13px 14px;
+
+  border: 1px solid #34415c;
+
+  border-radius: 9px;
+
+  outline: none;
+
+  background: #0c1426;
+
+  color: #f4f6fb;
+
+}
+
+
+
+input:focus,
+
+textarea:focus,
+
+select:focus {
+
+  border-color: #8b7dff;
+
+  box-shadow: 0 0 0 3px rgba(109, 93, 252, 0.15);
+
+  outline: none;
+
+}
+
+
+
+button {
+
+  padding: 14px;
+
+  border: 0;
+
+  border-radius: 9px;
+
+  background: #6d5dfc;
+
+  color: white;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: background 0.2s;
+
+}
+
+
+
+button:hover {
+
+  background: #8174ff;
+
+}
+
+
+
+button:disabled {
+
+  cursor: wait;
+
+  opacity: 0.7;
+
+}
+
+
+
+.error-message {
+
+  margin: 0 0 14px;
+
+  color: #ff9696;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+
+  overflow-wrap: anywhere;
+
+}
+
+
+
+.security-note {
+
+  margin: 26px 0 0;
+
+  color: #77859d;
+
+  font-size: 12px;
+
+  text-align: center;
+
+}
+
+
+
+/* Tableau de bord */
+
+
+
+.dashboard-page {
+
+  min-height: 100vh;
+
+  background: #0b1020;
+
+  color: #e8ecf4;
+
+}
+
+
+
+.dashboard-header {
+
+  min-height: 82px;
+
+  padding: 16px 5%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 24px;
+
+  border-bottom: 1px solid #26324a;
+
+  background: #11192c;
+
+}
+
+
+
+.dashboard-brand,
+
+.user-menu {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+}
+
+
+
+.dashboard-brand .brand-mark {
+
+  flex-shrink: 0;
+
+  margin: 0;
+
+}
+
+
+
+.dashboard-brand strong,
+
+.dashboard-brand span,
+
+.user-info strong,
+
+.user-info span {
+
+  display: block;
+
+}
+
+
+
+.dashboard-brand span,
+
+.user-info span {
+
+  margin-top: 4px;
+
+  color: #96a3b9;
+
+  font-size: 12px;
+
+}
+
+
+
+.user-info {
+
+  text-align: right;
+
+}
+
+
+
+.logout-button {
+
+  margin: 0;
+
+  padding: 10px 14px;
+
+  border: 1px solid #34415c;
+
+  background: transparent;
+
+}
+
+
+
+.logout-button:hover {
+
+  background: #26324a;
+
+}
+
+
+
+.dashboard-content {
+
+  width: min(1440px, 100%);
+
+  margin: 0 auto;
+
+  padding: 42px 5%;
+
+}
+
+
+
+.welcome-section h1 {
+
+  margin: 0;
+
+  font-size: clamp(26px, 4vw, 36px);
+
+}
+
+
+
+.welcome-section > p:last-child {
+
+  color: #96a3b9;
+
+  margin-top: 10px;
+
+}
+
+
+
+.ticket-actions {
+
+  display: flex;
+
+  justify-content: flex-end;
+
+  margin-top: 24px;
+
+}
+
+
+
+.new-ticket-button {
+
+  margin: 0;
+
+  padding: 12px 18px;
+
+}
+
+
+
+.success-message {
+
+  margin: 16px 0 0;
+
+  padding: 12px 16px;
+
+  border: 1px solid #285c49;
+
+  border-radius: 9px;
+
+  background: #173b31;
+
+  color: #8be0bd;
+
+  font-size: 14px;
+
+}
+
+
+
+/* Formulaire de création de ticket */
+
+
+
+.ticket-form {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+  margin: 20px 0 32px;
+
+  padding: 26px;
+
+  border: 1px solid #34415c;
+
+  border-radius: 14px;
+
+  background: #11192c;
+
+}
+
+
+
+.ticket-form-heading h2 {
+
+  margin: 0;
+
+  font-size: 20px;
+
+}
+
+
+
+.ticket-form-heading p {
+
+  margin: 8px 0 18px;
+
+  color: #96a3b9;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+
+}
+
+
+
+.ticket-form label {
+
+  margin-top: 6px;
+
+}
+
+
+
+.ticket-form input,
+
+.ticket-form textarea,
+
+.ticket-form select {
+
+  width: 100%;
+
+  padding: 12px 14px;
+
+  border: 1px solid #34415c;
+
+  border-radius: 9px;
+
+  background: #0c1426;
+
+  color: #e8ecf4;
+
+}
+
+
+
+.ticket-form textarea {
+
+  resize: vertical;
+
+  line-height: 1.5;
+
+}
+
+
+
+.ticket-form select {
+
+  cursor: pointer;
+
+}
+
+
+
+.ticket-form button {
+
+  margin-top: 12px;
+
+}
+
+
+
+/* Statistiques */
+
+
+
+.stats-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 18px;
+
+  margin: 32px 0;
+
+}
+
+
+
+.stat-card {
+
+  padding: 22px;
+
+  border: 1px solid #28344d;
+
+  border-radius: 14px;
+
+  background: #11192c;
+
+}
+
+
+
+.stat-card span,
+
+.stat-card strong,
+
+.stat-card small {
+
+  display: block;
+
+}
+
+
+
+.stat-card span,
+
+.stat-card small {
+
+  color: #96a3b9;
+
+}
+
+
+
+.stat-card strong {
+
+  margin: 14px 0 8px;
+
+  font-size: 32px;
+
+}
+
+
+
+.stat-card small {
+
+  font-size: 12px;
+
+}
+
+
+
+/* Liste des tickets */
+
+
+
+.tickets-panel {
+
+  overflow: hidden;
+
+  border: 1px solid #28344d;
+
+  border-radius: 14px;
+
+  background: #11192c;
+
+}
+
+
+
+.panel-heading {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 24px;
+
+  border-bottom: 1px solid #28344d;
+
+}
+
+
+
+.panel-heading h2 {
+
+  margin: 0;
+
+  font-size: 19px;
+
+}
+
+
+
+.panel-heading p {
+
+  margin: 7px 0 0;
+
+  color: #96a3b9;
+
+  font-size: 13px;
+
+}
+
+
+
+.ticket-count {
+
+  color: #c3bcff;
+
+  font-size: 13px;
+
+  white-space: nowrap;
+
+}
+
+
+
+.table-wrapper {
+
+  width: 100%;
+
+  max-width: 100%;
+
+  overflow-x: hidden;
+
+}
+
+
+
+.tickets-table {
+
+  width: 100%;
+
+  max-width: 100%;
+
+  table-layout: fixed;
+
+  border-collapse: collapse;
+
+  text-align: left;
+
+}
+
+
+
+.tickets-table th,
+
+.tickets-table td {
+
+  padding: 16px 20px;
+
+  border-bottom: 1px solid #26324a;
+
+  white-space: nowrap;
+
+}
+
+
+
+.tickets-table th {
+
+  color: #96a3b9;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.6px;
+
+  text-transform: uppercase;
+
+}
+
+
+
+.tickets-table td {
+
+  font-size: 13px;
+
+}
+
+
+
+.tickets-table td:first-child {
+
+  min-width: 0;
+
+  max-width: none;
+
+  white-space: normal;
+
+  overflow-wrap: anywhere;
+
+}
+
+
+
+.tickets-table td:first-child strong,
+
+.tickets-table td:first-child small {
+
+  display: block;
+
+}
+
+
+
+.tickets-table td:first-child small {
+
+  margin-top: 6px;
+
+  color: #96a3b9;
+
+  line-height: 1.5;
+
+}
+
+
+
+.status,
+
+.priority {
+
+  display: inline-block;
+
+  padding: 6px 9px;
+
+  border-radius: 7px;
+
+  background: #26324a;
+
+  color: #dbe2ef;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+}
+
+
+
+.status-open {
+
+  background: #392b18;
+
+  color: #ffd18a;
+
+}
+
+
+
+.status-in_progress {
+
+  background: #202f50;
+
+  color: #9ec5ff;
+
+}
+
+
+
+.status-pending {
+
+  background: #34274b;
+
+  color: #d7b7ff;
+
+}
+
+
+
+.status-resolved {
+  background: #173b31;
+  color: #8be0bd;
+}
+
+.status-closed {
+  background: #42252e;
+  color: #ff9696;
+}
+
+
+
+
+.priority-urgent,
+
+.priority-high {
+
+  color: #ff9c9c;
+
+  background: #42252e;
+
+}
+
+
+
+.empty-state {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 48px 20px;
+
+  color: #96a3b9;
+
+  text-align: center;
+
+}
+
+
+
+.empty-state strong {
+
+  color: #e8ecf4;
+
+}
+
+
+
+.empty-state p {
+
+  margin: 0;
+
+  font-size: 13px;
+
+}
+
+
+
+.empty-icon {
+
+  display: grid;
+
+  place-items: center;
+
+  width: 42px;
+
+  height: 42px;
+
+  border-radius: 50%;
+
+  background: #173b31;
+
+  color: #8be0bd;
+
+}
+
+
+
+@media (max-width: 900px) {
+
+  .stats-grid {
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  }
+
+}
+
+
+
+@media (max-width: 560px) {
+
+  .login-card {
+
+    padding: 28px 22px;
+
+  }
+
+
+
+  .dashboard-header {
+
+    align-items: flex-start;
+
+    padding: 16px;
+
+  }
+
+
+
+  .dashboard-brand span {
+
+    max-width: 150px;
+
+    line-height: 1.4;
+
+  }
+
+
+
+  .user-menu {
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 10px;
+
+  }
+
+
+
+  .dashboard-content {
+
+    padding: 28px 16px;
+
+  }
+
+
+
+  .stats-grid {
+
+    gap: 10px;
+
+  }
+
+
+
+  .stat-card {
+
+    padding: 16px;
+
+  }
+
+
+
+  .stat-card strong {
+
+    font-size: 26px;
+
+  }
+
+
+
+  .panel-heading {
+
+    padding: 18px;
+
+  }
+
+}
+
+
+
+/* Gestion des utilisateurs : listes déroulantes */
+
+.users-table select,
+
+.users-table td select {
+
+  appearance: none;
+
+  -webkit-appearance: none;
+
+  background-color: #0c1426;
+
+  color: #e8eaf2;
+
+  border: 1px solid #33415f;
+
+  border-radius: 8px;
+
+  padding: 8px 32px 8px 12px;
+
+  min-width: 0;
+  max-width: 100%;
+
+  font: inherit;
+
+  font-size: 13px;
+
+  cursor: pointer;
+
+
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http\://www\.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23a5a9c5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+
+  background-repeat: no-repeat;
+
+  background-position: right 10px center;
+
+  background-size: 14px;
+
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+}
+
+
+
+.users-table select:hover {
+
+  border-color: #7160ff;
+
+}
+
+
+
+.users-table select:focus {
+
+  outline: none;
+
+  border-color: #6c5cff;
+
+  box-shadow: 0 0 0 3px rgb(108 92 255 / 20%);
+
+}
+
+
+
+.users-table select:disabled {
+
+  opacity: 0.5;
+
+  cursor: not-allowed;
+
+}
+
+
+
+.users-table select option {
+
+  background-color: #111a2d;
+
+  color: #e8eaf2;
+
+}
+
+
+
+/* Style des listes déroulantes dans toute l'application */
+
+select {
+
+  appearance: none;
+
+  -webkit-appearance: none;
+
+  background-color: #0c1426;
+
+  color: #e8eaf2;
+
+  border: 1px solid #33415f;
+
+  border-radius: 8px;
+
+  padding: 8px 34px 8px 12px;
+
+  font: inherit;
+
+  font-size: 13px;
+
+  cursor: pointer;
+
+
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http\://www\.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23a5a9c5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+
+  background-repeat: no-repeat;
+
+  background-position: right 10px center;
+
+  background-size: 14px;
+
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+}
+
+
+
+select:hover {
+
+  border-color: #7160ff;
+
+}
+
+
+
+select:focus {
+
+  outline: none;
+
+  border-color: #6c5cff;
+
+  box-shadow: 0 0 0 3px rgb(108 92 255 / 20%);
+
+}
+
+
+
+select:disabled {
+
+  opacity: 0.5;
+
+  cursor: not-allowed;
+
+}
+
+
+
+select option {
+
+  background-color: #111a2d;
+
+  color: #e8eaf2;
+
+}
+
+
+
+/* Tableau des tickets : adaptation à la largeur du conteneur */
+.tickets-panel,
+.table-wrapper {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.tickets-table {
+  width: 100%;
+  min-width: 0;
+  table-layout: fixed;
+}
+
+.tickets-table th,
+.tickets-table td {
+  padding: 12px 10px;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.tickets-table select {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  padding: 7px 22px 7px 8px;
+  font-size: 12px;
+}
+
+@media (max-width: 700px) {
+  .tickets-table th,
+  .tickets-table td {
+    padding: 8px 5px;
+    font-size: 11px;
+  }
+
+  .tickets-table select {
+    padding: 6px 18px 6px 5px;
+    font-size: 11px;
+  }
+}
+
+/* Statut des comptes utilisateurs */
+.users-table .status-resolved {
+  background-color: #173b31;
+  color: #8be0bd;
+}
+
+.users-table .status-closed {
+  background-color: #42252e;
+  color: #ff9696;
+}
