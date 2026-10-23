@@ -173,15 +173,10 @@ utilisé pour la livraison.
 
 ## Captures d'écran
 
-Ajoute ici des captures d'écran de l'application, par exemple :
-
--   `docs/screenshots/login.png`
--   `docs/screenshots/employee-dashboard.png`
--   `docs/screenshots/technician-dashboard.png`
--   `docs/screenshots/admin-users.png`
-
-Utilise uniquement des captures ne contenant pas de données personnelles
-ou de secrets.
+-   `docs/login.png`
+-   `docs/gestion_ticket.png`
+-   `docs/creation_ticket.png`
+-   `docs/gestion_et_creation_d'utilisateur.png`
 
 ## Auteur
 
