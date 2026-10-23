@@ -173,10 +173,17 @@ utilisé pour la livraison.
 
 ## Captures d'écran
 
--   `docs/login.png`
--   `docs/gestion_ticket.png`
--   `docs/creation_ticket.png`
--   `docs/gestion_et_creation_d'utilisateur.png`
+### Connexion
+![Page de connexion](docs/login.png)
+
+### Gestion des tickets
+![Gestion des tickets](docs/gestion_ticket.png)
+
+### Création d'un ticket
+![Création d'un ticket](docs/creation_ticket.png)
+
+### Gestion et création d'utilisateurs
+![Gestion et création d'utilisateurs](docs/gestion_et_creation_d'utilisateur.png)
 
 ## Auteur
 
